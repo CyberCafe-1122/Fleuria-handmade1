@@ -21,11 +21,31 @@ const DEFAULT_CONFIG = {
 };
 
 // Determine backend API host
-const API_HOST = window.FLEURIA_API_HOST || (
-  window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+// Supports:
+// 1. window.FLEURIA_API_HOST (explicit programmatic override)
+// 2. URL parameter ?api=https://your-api-url (auto-saved to localStorage)
+// 3. localStorage 'fleuria_api_host'
+// 4. Localhost fallback ('http://localhost:5000')
+(function() {
+  try {
+    const params = new URLSearchParams(window.location.search);
+    const apiParam = params.get('api');
+    if (apiParam) {
+      localStorage.setItem('fleuria_api_host', apiParam.replace(/\/$/, ''));
+    }
+  } catch (e) {}
+})();
+
+const STORED_API_HOST = (function() {
+  try { return localStorage.getItem('fleuria_api_host'); } catch (e) { return null; }
+})();
+
+const API_HOST = window.FLEURIA_API_HOST ||
+  STORED_API_HOST ||
+  (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
     ? 'http://localhost:5000'
-    : ''
-);
+    : '');
+
 window.FLEURIA_API_HOST = API_HOST;
 
 // Load persistent config or fallback to defaults
@@ -129,3 +149,11 @@ window.updateStoreConfig = updateStoreConfig;
 window.syncStoreConfigFromAPI = syncStoreConfigFromAPI;
 window.formatCurrency = formatCurrency;
 window.buildWhatsAppUrl = buildWhatsAppUrl;
+window.setFleuriaApiHost = function(url) {
+  if (url) {
+    localStorage.setItem('fleuria_api_host', url.replace(/\/$/, ''));
+  } else {
+    localStorage.removeItem('fleuria_api_host');
+  }
+  window.location.reload();
+};
