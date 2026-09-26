@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fleuria Handmade | Everlasting Floral Artistry & Botanical Crafts</title>
+  <meta name="description" content="Shop handcrafted pipe cleaner bouquets, artisanal botanical candles, preserved roses, and luxury gift hampers. Direct orders & personalized support on WhatsApp." />
+  <meta name="keywords" content="pipe cleaner flowers, chenille stem flowers, handmade bouquet, botanical candle, preserved roses, artisan gifts, WhatsApp ordering, custom wedding flowers" />
+  
+  <!-- OpenGraph Tags -->
+  <meta property="og:title" content="Fleuria Handmade | Everlasting Floral Artistry" />
+  <meta property="og:description" content="Handcrafted pipe cleaner flowers, hand-poured botanical candles, and luxury gifts. Direct WhatsApp ordering." />
+  <meta property="og:image" content="assets/images/hero-banner.jpg" />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌸</text></svg>" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- =========================================================================
+       ANNOUNCEMENT BAR
+       ========================================================================= -->
+  <aside class="announcement-bar" role="banner">
+    <span>✨ Handcrafted with love • Worldwide & Local Express Delivery • Use code <strong>FLEURIA10</strong> for 10% off your first order!</span>
+  </aside>
+
+  <!-- =========================================================================
+       STICKY HEADER & NAVIGATION
+       ========================================================================= -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <!-- Brand Logo -->
+      <a href="#hero" class="brand-logo" aria-label="Fleuria Handmade Home">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+        </div>
+        <div>
+          <span class="store-name-text">Fleuria</span>
+          <span class="brand-tagline">Handmade Botanicals</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#catalogSection" class="nav-link">Shop Collection</a></li>
+          <li><a href="#bespokeSection" class="nav-link">Custom Orders</a></li>
+          <li><a href="#artisanSection" class="nav-link">Meet the Maker</a></li>
+          <li><a href="#careSection" class="nav-link">Care Guide</a></li>
+          <li><a href="#reviewsSection" class="nav-link">Reviews</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <!-- Direct WhatsApp Header CTA -->
+        <a href="#" id="headerWaLink" target="_blank" rel="noopener noreferrer" class="btn-nav-wa" title="Chat on WhatsApp">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          <span>WhatsApp Us</span>
+        </a>
+
+        <!-- Cart Trigger Button -->
+        <button class="action-btn" id="btnOpenCart" aria-label="Open Cart Drawer">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+          <span class="cart-count-badge" id="cartBadge" style="display: none;">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       HERO SECTION
+       ========================================================================= -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="sparkle">✦</span> 100% Handcrafted • Hand-Poured in Small Batches
+        </div>
+        <h1 class="hero-title">
+          Everlasting Floral Artistry, <em>Crafted with Love</em>
+        </h1>
+        <p class="hero-subtitle">
+          Discover hand-sculpted pipe cleaner flower bouquets that never wilt, hand-poured botanical soy candles, and bespoke gifts. Connect directly with our artisan team on WhatsApp for custom orders and instant purchasing.
+        </p>
+        <div class="hero-actions">
+          <a href="#catalogSection" class="btn-primary">
+            <span>Explore Handcrafted Blooms</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <a href="#" id="heroWaLink" target="_blank" rel="noopener noreferrer" class="btn-whatsapp-hero">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+            <span>Order via WhatsApp</span>
+          </a>
+        </div>
+        <!-- Social Proof -->
+        <div class="hero-social-proof">
+          <div class="avatar-stack">
+            <span>🌸</span>
+            <span>🕯️</span>
+            <span>🌿</span>
+            <span>✨</span>
+          </div>
+          <div>
+            <div class="rating-stars">★★★★★</div>
+            <p class="proof-text">Loved by <strong>2,400+ happy gifters</strong> • 4.9/5 Rating</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual -->
+      <div class="hero-media">
+        <div class="hero-card-frame">
+          <img src="assets/images/hero-banner.jpg" alt="Artisan floral design table with handcrafted pipe cleaner bouquets and botanical candles" />
+        </div>
+        <!-- Floating Glass Card -->
+        <div class="floating-glass-card">
+          <div class="card-icon-circle">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          </div>
+          <div class="glass-card-info">
+            <h4>100% Hand-Sculpted</h4>
+            <p>Velvety petals that never wither</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       TRUST PILLARS / FEATURES BAR
+       ========================================================================= -->
+  <section class="features-bar" aria-label="Why Choose Fleuria">
+    <div class="container features-grid">
+      <div class="feature-item">
+        <div class="feature-icon-box">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+        </div>
+        <div class="feature-text">
+          <h4>100% Artisan Made</h4>
+          <p>Every single stem hand-crafted & wax poured</p>
+        </div>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon-box">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+        </div>
+        <div class="feature-text">
+          <h4>Eco-Friendly Materials</h4>
+          <p>Velvety chenille craft stems & pure soy wax</p>
+        </div>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon-box">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+        </div>
+        <div class="feature-text">
+          <h4>Bespoke Customization</h4>
+          <p>Custom colors, scents, and calligraphy notes</p>
+        </div>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon-box">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+        </div>
+        <div class="feature-text">
+          <h4>Gift-Ready Packaging</h4>
+          <p>Safe protective packaging in luxury gift boxes</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       CATALOG / PRODUCTS SECTION
+       ========================================================================= -->
+  <section class="catalog-section" id="catalogSection">
+    <div class="container">
+      <div class="catalog-header text-center">
+        <span class="section-tag">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          The Curated Collection
+        </span>
+        <h2 class="section-title">Artisan Blooms & Botanical Delights</h2>
+        <p class="section-subtitle">
+          Handmade pipe cleaner floral bouquets, scented botanical candles, preserved roses, and luxury gift hampers made to cherish forever.
+        </p>
+      </div>
+
+      <!-- Controls: Category Filter Pills & Search Input -->
+      <div class="catalog-controls">
+        <div class="category-pills" role="tablist">
+          <button class="filter-pill active" data-category="all" role="tab">All Creations</button>
+          <button class="filter-pill" data-category="pipe-cleaner" role="tab">Pipe Cleaner Flowers</button>
+          <button class="filter-pill" data-category="candles" role="tab">Botanical Candles</button>
+          <button class="filter-pill" data-category="preserved" role="tab">Preserved Flowers</button>
+          <button class="filter-pill" data-category="jewelry" role="tab">Floral Jewelry</button>
+          <button class="filter-pill" data-category="hampers" role="tab">Gift Hampers</button>
+        </div>
+
+        <div class="catalog-search-wrapper">
+          <span class="search-icon-inside">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          </span>
+          <input type="text" id="catalogSearch" class="catalog-search-input" placeholder="Search creations..." aria-label="Search creations" />
+        </div>
+      </div>
+
+      <!-- Products Grid (Rendered via JS) -->
+      <div class="products-grid" id="productsGrid" aria-live="polite">
+        <!-- Rendered by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       BESPOKE COMMISSIONS & CUSTOM ORDERS
+       ========================================================================= -->
+  <section class="bespoke-section" id="bespokeSection">
+    <div class="container">
+      <div class="bespoke-card">
+        <div class="bespoke-grid">
+          <div class="bespoke-info">
+            <span class="section-tag">Bespoke Creations</span>
+            <h3>Commission a Custom Handcrafted Piece</h3>
+            <p>
+              Planning a wedding, anniversary, graduation, or memorable keepsake? Our artisans craft customized pipe cleaner flower bouquets matching your favorite palette, bespoke scented candle favors, and curated luxury gift boxes.
+            </p>
+
+            <ul class="bespoke-steps">
+              <li class="bespoke-step-item">
+                <span class="step-num">1</span>
+                <div>
+                  <strong>Share Your Vision:</strong> Choose your preferred floral species, color palette, and occasion.
+                </div>
+              </li>
+              <li class="bespoke-step-item">
+                <span class="step-num">2</span>
+                <div>
+                  <strong>Artisan Consultation:</strong> We send photo previews and chenille color samples directly via WhatsApp.
+                </div>
+              </li>
+              <li class="bespoke-step-item">
+                <span class="step-num">3</span>
+                <div>
+                  <strong>Lovingly Hand-Crafted:</strong> Carefully packaged and delivered directly to your doorstep.
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Bespoke Commission Form -->
+          <form class="bespoke-form" id="bespokeForm">
+            <div class="form-row-2">
+              <div class="form-group">
+                <label class="form-label" for="bespokeName">Your Name *</label>
+                <input type="text" id="bespokeName" class="form-control" placeholder="e.g. Eleanor Vance" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="bespokePhone">WhatsApp Number *</label>
+                <input type="tel" id="bespokePhone" class="form-control" placeholder="e.g. +1 555 234 5678" required />
+              </div>
+            </div>
+
+            <div class="form-row-2">
+              <div class="form-group">
+                <label class="form-label" for="bespokeType">Project Type</label>
+                <select id="bespokeType" class="form-control">
+                  <option value="Custom Pipe Cleaner Bouquet">Custom Pipe Cleaner Bouquet (Choose Flowers & Colors)</option>
+                  <option value="Personalized Gift Hamper">Personalized Gift Hamper</option>
+                  <option value="Bulk Wedding / Event Favors">Bulk Wedding / Event Favors</option>
+                  <option value="Bespoke Scented Soy Candles">Bespoke Scented Soy Candles</option>
+                  <option value="Custom Floral Resin Keepsake">Custom Floral Resin Keepsake</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="bespokePalette">Color Palette / Theme</label>
+                <input type="text" id="bespokePalette" class="form-control" placeholder="e.g. Blush pink, sage & cream" />
+              </div>
+            </div>
+
+            <div class="form-row-2">
+              <div class="form-group">
+                <label class="form-label" for="bespokeDate">Needed By Date</label>
+                <input type="date" id="bespokeDate" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="bespokeBudget">Approx. Budget</label>
+                <input type="text" id="bespokeBudget" class="form-control" placeholder="e.g. 5 000 DA - 15 000 DA" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="bespokeDesc">Describe Your Dream Piece *</label>
+              <textarea id="bespokeDesc" rows="3" class="form-control" placeholder="Tell us about the flower types, recipient, or special details..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit-bespoke">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+              <span>Send Commission Brief to WhatsApp</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       MEET THE MAKER / ARTISAN PHILOSOPHY
+       ========================================================================= -->
+  <section class="artisan-section" id="artisanSection">
+    <div class="container artisan-grid">
+      <div class="artisan-image-wrapper">
+        <img src="assets/images/artisan-maker.jpg" alt="Fleuria artisan floral designer smiling in her craft studio" class="artisan-portrait" />
+        <div class="artisan-stat-card">
+          <div class="stat-number">2,400+</div>
+          <div class="stat-label">Keepsake Blooms Hand-Crafted</div>
+        </div>
+      </div>
+
+      <div class="artisan-content">
+        <span class="section-tag">Meet The Maker</span>
+        <h3>Handcrafted with Intention, Cherished for a Lifetime</h3>
+        <p>
+          "Fleuria was born out of a deep passion for botanical wonder and the desire to create flowers that outlive fleeting moments. Fresh blooms bring joy for a few days, but our pipe cleaner and preserved florals hold sentimental memories that never fade."
+        </p>
+        <blockquote class="artisan-quote">
+          "Every stem is sculpted by hand, every petal is shaped with care, and every candle is poured with pure organic botanical oils. We treat each order as an heirloom piece for someone you cherish."
+        </blockquote>
+        <p>
+          We pride ourselves on personal customer connections. When you message us on WhatsApp, you're talking directly with the maker who crafts your bouquet and hand-pours your candles.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       CARE GUIDE
+       ========================================================================= -->
+  <section class="care-section" id="careSection">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag">Longevity & Care</span>
+        <h2 class="section-title">How to Care for Your Handmade Botanicals</h2>
+        <p class="section-subtitle">Simple, easy care tips to ensure your handcrafted creations stay radiant year after year.</p>
+      </div>
+
+      <div class="care-grid">
+        <div class="care-card">
+          <div class="care-icon">✨</div>
+          <h4>Pipe Cleaner Flowers Care</h4>
+          <p>
+            Keep in a dry indoor spot away from water. Bend and pose the flexible stems into your favorite arrangement whenever you wish. To remove dust, gently brush with a soft dry makeup brush or blow with cool, low hairdryer air.
+          </p>
+        </div>
+
+        <div class="care-card">
+          <div class="care-icon">🕯️</div>
+          <h4>Botanical Candle Burn Care</h4>
+          <p>
+            Always trim the wooden wick to 1/4 inch before lighting. Allow the top wax layer to completely melt to the edges during the first burn to prevent tunneling and optimize fragrance throw.
+          </p>
+        </div>
+
+        <div class="care-card">
+          <div class="care-icon">🌹</div>
+          <h4>Preserved Roses Cloche Care</h4>
+          <p>
+            Preserved flowers need zero watering! Keep the glass cloche closed in an air-conditioned or ambient room away from harsh direct sunlight to preserve vibrant petal pigmentation for 3+ years.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       CUSTOMER REVIEWS & SOCIAL PROOF
+       ========================================================================= -->
+  <section class="reviews-section" id="reviewsSection">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag">Words of Love</span>
+        <h2 class="section-title">What Our Customers Say</h2>
+        <p class="section-subtitle">Real experiences from customers who ordered custom floral gifts via WhatsApp.</p>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            "I ordered the Pastel Bloom Tulip bouquet for my sister's graduation. Ordering on WhatsApp was so seamless! The artisan sent me photos of the bouquet before dispatch. My sister cried happy tears!"
+          </p>
+          <div class="review-author">
+            <div class="author-avatar">SC</div>
+            <div class="author-info">
+              <h5>Sophia Chen</h5>
+              <span class="author-tag">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                Verified WhatsApp Buyer
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            "The Botanical Blossom Soy Candle smells incredible and the crackling wood wick creates the coziest ambience! The dried rose petals on top look so luxurious. Will definitely order the gift hamper next."
+          </p>
+          <div class="review-author">
+            <div class="author-avatar">MK</div>
+            <div class="author-info">
+              <h5>Maya Kensington</h5>
+              <span class="author-tag">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                Verified WhatsApp Buyer
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            "We commissioned 35 mini pipe cleaner flower favors for our intimate garden wedding. The velvety texture, vibrant colors, ribbon wrapping, and personal calligraphy cards exceeded our highest expectations!"
+          </p>
+          <div class="review-author">
+            <div class="author-avatar">LR</div>
+            <div class="author-info">
+              <h5>Liam & Rebecca</h5>
+              <span class="author-tag">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                Verified WhatsApp Buyer
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3 class="store-name-text">Fleuria Handmade</h3>
+          <p class="store-tagline-text">
+            Artisan Pipe Cleaner Florals, Botanical Candles & Handcrafted Gifts. Each creation is made slowly and sustainably to bring everlasting botanical wonder to your home.
+          </p>
+          <div style="display: flex; gap: 0.75rem; align-items: center;">
+            <a href="#" class="action-btn" aria-label="Instagram" style="background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.15); color: white;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="#" class="action-btn" aria-label="WhatsApp" style="background: rgba(37,211,102,0.2); border-color: rgba(37,211,102,0.4); color: #25D366;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Collections</h4>
+          <ul class="footer-links">
+            <li><a href="#catalogSection">Pipe Cleaner Flowers</a></li>
+            <li><a href="#catalogSection">Botanical Soy Candles</a></li>
+            <li><a href="#catalogSection">Preserved Eternal Roses</a></li>
+            <li><a href="#catalogSection">Pressed Floral Jewelry</a></li>
+            <li><a href="#catalogSection">Signature Gift Hampers</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Customer Care</h4>
+          <ul class="footer-links">
+            <li><a href="#careSection">Floral & Candle Care</a></li>
+            <li><a href="#bespokeSection">Custom Commission Brief</a></li>
+            <li><a href="#catalogSection">Ordering via WhatsApp Guide</a></li>
+            <li><a href="mailto:orders@fleuriahandmade.com">Email Artisan Studio</a></li>
+            <li><span>WhatsApp: <strong class="store-wa-display">+213 555 81 25 64</strong></span></li>
+          </ul>
+        </div>
+
+        <div class="footer-newsletter">
+          <h4>Stay in Bloom</h4>
+          <p>Subscribe for exclusive small-batch drops, seasonal flower releases, and gift inspiration.</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" class="newsletter-input" placeholder="Your email address..." required />
+            <button type="submit" class="btn-newsletter">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Fleuria Handmade. All rights reserved. Artisan Crafted with Love.</p>
+        <div>
+          <!-- Settings Trigger so user can easily customize WhatsApp Number and Currency live! -->
+          <button class="btn-open-config" id="btnOpenConfig" title="Configure WhatsApp Number & Store Settings">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+            <span>Store Settings / WhatsApp Number</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       SLIDE-OVER CART DRAWER
+       ========================================================================= -->
+  <div class="cart-drawer-overlay" id="cartDrawerOverlay">
+    <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping Cart">
+      <div class="cart-drawer-header">
+        <h3>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+          <span>Your Artisan Cart</span>
+        </h3>
+        <button class="btn-close-drawer" id="btnCloseDrawer" aria-label="Close cart drawer">✕</button>
+      </div>
+
+      <!-- Free Delivery Meter -->
+      <div class="shipping-meter-box">
+        <div class="meter-text" id="shippingMeterText">
+          <span>Free delivery on orders over 8 000 DA</span>
+        </div>
+        <div class="meter-bar-track">
+          <div class="meter-bar-fill" id="shippingMeterFill"></div>
+        </div>
+      </div>
+
+      <!-- Items List -->
+      <div class="cart-items-container" id="cartItemsContainer">
+        <!-- Rendered by JS -->
+      </div>
+
+      <!-- Drawer Footer & WhatsApp Checkout -->
+      <div class="cart-drawer-footer">
+        <!-- Customer Info Accordion -->
+        <div class="checkout-details-accordion">
+          <button type="button" class="accordion-toggle-btn" id="toggleCheckoutFields">
+            <span>📍 Delivery & Gift Note Details (Required for WhatsApp Order)</span>
+            <span class="accordion-icon">+</span>
+          </button>
+
+          <div class="checkout-form-fields" id="checkoutFieldsContainer">
+            <div class="form-row-2">
+              <div class="form-group">
+                <label class="form-label" for="custName">Your Full Name *</label>
+                <input type="text" id="custName" class="form-control" placeholder="e.g. Sarah Jenkins" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="custPhone">WhatsApp Phone *</label>
+                <input type="tel" id="custPhone" class="form-control" placeholder="e.g. +1 555 123 4567" />
+              </div>
+            </div>
+
+            <div class="form-row-2">
+              <div class="form-group">
+                <label class="form-label" for="custAddress">Delivery Address *</label>
+                <input type="text" id="custAddress" class="form-control" placeholder="House #, Street" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="custCity">City / Wilaya *</label>
+                <input type="text" id="custCity" class="form-control" placeholder="e.g. Algiers, Oran, Constantine" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="custGiftNote">Complimentary Gift Card Message (Optional)</label>
+              <textarea id="custGiftNote" rows="2" class="form-control" placeholder="Write a sweet message for the recipient card..."></textarea>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="custPaymentMethod">Preferred Payment Method</label>
+              <select id="custPaymentMethod" class="form-control">
+                <option value="Cash on Delivery (Paiement à la livraison / COD)">Cash on Delivery (Paiement à la livraison / COD)</option>
+                <option value="BaridiMob / CCP Transfer">BaridiMob / CCP Transfer</option>
+                <option value="Direct Bank Transfer">Direct Bank Transfer</option>
+                <option value="Edahabia / CIB Card">Edahabia / CIB Card</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Summary Totals -->
+        <div class="cart-summary-line">
+          <span>Subtotal</span>
+          <span id="cartSubtotal">0 DA</span>
+        </div>
+        <div class="cart-summary-line">
+          <span>Delivery</span>
+          <span id="cartShipping">0 DA</span>
+        </div>
+        <div class="cart-summary-line total">
+          <span>Estimated Total</span>
+          <span id="cartGrandTotal">0 DA</span>
+        </div>
+
+        <!-- Checkout via WhatsApp Button -->
+        <button class="btn-checkout-whatsapp" id="btnCheckoutWhatsApp">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          <span>Complete Order on WhatsApp</span>
+        </button>
+      </div>
+    </aside>
+  </div>
+
+  <!-- =========================================================================
+       QUICK VIEW PRODUCT MODAL
+       ========================================================================= -->
+  <div class="modal-overlay" id="quickViewModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-content-card">
+      <button class="btn-close-modal" id="btnCloseModal" aria-label="Close modal">✕</button>
+
+      <!-- Left: Image Preview -->
+      <div class="modal-image-col">
+        <img id="modalImg" src="" alt="Product view" />
+      </div>
+
+      <!-- Right: Product Details & Options -->
+      <div class="modal-details-col">
+        <span class="modal-category-tag" id="modalCategory">Category</span>
+        <h3 class="modal-title" id="modalTitle">Product Title</h3>
+
+        <div class="modal-price-row">
+          <span class="current-price" id="modalPrice">0 DA</span>
+          <span class="original-price" id="modalOriginalPrice" style="display: none;">0 DA</span>
+        </div>
+
+        <p id="modalDescription" style="font-size: 0.9rem; color: var(--color-text-muted); line-height: 1.6; margin-bottom: 0.75rem;"></p>
+
+        <!-- Features list -->
+        <ul class="modal-features-list" id="modalFeatures"></ul>
+
+        <!-- Care Tips snippet -->
+        <div style="font-size: 0.8rem; background: var(--color-cream); padding: 0.65rem 0.85rem; border-radius: var(--radius-sm); border: 1px solid var(--color-border); margin: 0.75rem 0;">
+          <strong style="color: var(--color-forest);">Care Tip:</strong> <span id="modalCare"></span>
+        </div>
+
+        <!-- Dynamic Options (Ribbon, Scent, etc.) -->
+        <div class="modal-options-wrapper" id="modalOptions"></div>
+
+        <!-- Actions -->
+        <div class="modal-actions-row">
+          <div class="qty-stepper" style="height: 44px; padding: 0 0.5rem;">
+            <button type="button" id="btnModalQtyMinus" style="font-size: 1.1rem; width: 30px;">−</button>
+            <span id="modalQtySpan" style="min-width: 28px;">1</span>
+            <button type="button" id="btnModalQtyPlus" style="font-size: 1.1rem; width: 30px;">+</button>
+          </div>
+
+          <button class="btn-add-cart" id="btnModalAddToCart" style="flex-grow: 1; height: 44px; border-radius: var(--radius-pill);">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+            Add to Cart
+          </button>
+
+          <button class="btn-whatsapp-hero" id="btnModalQuickWa" style="padding: 0 1.25rem; height: 44px; font-size: 0.875rem;" title="Buy via WhatsApp">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+            <span>Buy via WhatsApp</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       FLOATING WHATSAPP CONCIERGE WIDGET
+       ========================================================================= -->
+  <aside class="wa-concierge-container" aria-label="WhatsApp Concierge">
+    <!-- Pop-up Card -->
+    <div class="wa-concierge-card" id="waConciergeCard">
+      <div class="concierge-card-header">
+        <div class="concierge-agent-info">
+          <div class="agent-avatar">
+            <img src="assets/images/artisan-maker.jpg" alt="Fleuria Florist Concierge" />
+            <span class="online-dot"></span>
+          </div>
+          <div class="agent-text">
+            <h4>Fleuria Concierge</h4>
+            <p>Replies in ~10 mins</p>
+          </div>
+        </div>
+        <button class="btn-close-concierge" id="btnCloseConcierge" aria-label="Close Concierge">✕</button>
+      </div>
+
+      <div class="concierge-card-body">
+        <div class="concierge-chat-bubble">
+          🌸 Hello! Welcome to Fleuria Handmade. Need a custom bouquet, candle advice, or help with an order? How can we assist you today?
+        </div>
+
+        <div class="concierge-quick-actions">
+          <button class="quick-topic-btn" data-topic="wedding">
+            <span>💐 Custom Wedding / Event Bouquet</span>
+            <span>→</span>
+          </button>
+          <button class="quick-topic-btn" data-topic="bespoke">
+            <span>🎀 Personal Gift Commission</span>
+            <span>→</span>
+          </button>
+          <button class="quick-topic-btn" data-topic="scent">
+            <span>🕯️ Candle Scent Consultation</span>
+            <span>→</span>
+          </button>
+          <button class="quick-topic-btn" data-topic="track">
+            <span>📦 Check Existing Order Status</span>
+            <span>→</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pulsing Floating Button -->
+    <button class="btn-wa-floating-toggle" id="waConciergeToggle" aria-label="Open WhatsApp Chat Concierge">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+    </button>
+  </aside>
+
+  <!-- =========================================================================
+       STORE CONFIG / OWNER SETTINGS MODAL
+       ========================================================================= -->
+  <div class="modal-overlay" id="configModal" role="dialog" aria-modal="true">
+    <div class="config-modal-card">
+      <button class="btn-close-modal" id="btnCloseConfig" aria-label="Close settings modal">✕</button>
+      <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem; color: var(--color-forest);">⚙️ Store & WhatsApp Settings</h3>
+      <p style="font-size: 0.85rem; color: var(--color-text-muted); margin-bottom: 1.5rem;">
+        Easily change your business WhatsApp phone number, display number, and store currency without editing code. Changes persist in your browser.
+      </p>
+
+      <form id="configForm">
+        <div class="form-group">
+          <label class="form-label" for="cfgWhatsapp">WhatsApp Number (with Country Code, digits only) *</label>
+          <input type="text" id="cfgWhatsapp" class="form-control" placeholder="e.g. 213555812564" required />
+          <small style="color: var(--color-text-light); font-size: 0.75rem;">No '+' or spaces, e.g. 213555812564</small>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="cfgDisplay">Display Phone Format (Shown on Website)</label>
+          <input type="text" id="cfgDisplay" class="form-control" placeholder="e.g. +213 555 81 25 64" />
+        </div>
+
+        <div class="form-row-2">
+          <div class="form-group">
+            <label class="form-label" for="cfgCurrency">Currency Symbol</label>
+            <input type="text" id="cfgCurrency" class="form-control" placeholder="e.g. DA, DZD, $, €" />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="cfgFreeShip">Free Shipping Over</label>
+            <input type="number" id="cfgFreeShip" class="form-control" placeholder="8000" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="cfgShipFee">Standard Delivery Fee</label>
+          <input type="number" id="cfgShipFee" class="form-control" placeholder="600" />
+        </div>
+
+        <div style="display: flex; gap: 0.75rem; margin-top: 1.5rem;">
+          <button type="submit" class="btn-primary" style="flex-grow: 1;">Save & Apply Settings</button>
+          <button type="button" class="action-btn" id="btnResetConfig" style="width: auto; padding: 0 1rem; border-radius: var(--radius-pill);" title="Reset to Defaults">Reset</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- JavaScript Modules -->
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "fleuria-handmade-admin-suite",
+  "version": "1.0.0",
+  "description": "Fleuria Handmade Secure Admin Panel & API Backend",
+  "private": true,
+  "scripts": {
+    "server": "npm --prefix server start",
+    "dev:server": "npm --prefix server run dev",
+    "seed": "npm --prefix server run seed",
+    "admin": "npm --prefix admin run dev",
+    "build:admin": "npm --prefix admin run build"
+  }
+}
